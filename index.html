@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HDX Somalia Cash</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/dc.css" />
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+        <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3.tip.min.js"></script>
+        <script src="js/crossfilter.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/dc.js"></script>
+        <script src="js/dc.leaflet.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h3>Somalia Cash Programming activities | as of December 2017</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <p class="keyfigures" id="peopleAssisted"></p>
+                    <h4>PEOPLE ASSISTED</h4>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <p class="keyfigures" id="amountTransfered"></p>
+                    <h4>TOTAL TRANSFER VALUE</h4>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <p class="keyfigures" id="numberOrgs"></p>
+                    <h4>PARTNER ORGANISATIONS</h4>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                   <p class="pull-right"> <a class="reset btn btn-primary btn-sm" id="reset" href="javascript:dc.filterAll();dc.redrawAll();">Reset filters</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="header" class="col-md-12"></div>
+            </div>
+            <div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>CONDITIONALITY</h4>
+                    <div id="filterConditionality"></div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>RESTRICTION</h4>
+                    <div id="filterRestriction"></div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>DELIVERY MECHANISM</h4>
+                    <div id="filterMechanism"></div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>AREA</h4>
+                    <div id="filterArea"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Cash transfers by region</h4>
+                    <div id="regionalCash" class="hdx-3w-chart"></div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Cash transfer by district</h4>
+                    <div id="hdx-3W-where" class="hdx-3w-chart"></div>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-6">
+                    <h4>Top 15 cash transfer by partner</h4>
+                    <div id="hdx-3W-who" class="hdx-3w-chart"></div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Cash transfer by cluster</h4>
+                    <div id="hdx-3W-what" class="hdx-3w-chart"></div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Number of benecificiary and total value transfer by month</h4>
+                <div></div>
+            </div>
+        </div> <!-- end container-->
+        <script src="js/site.js"></script>
+
+    </body>
+</html>
